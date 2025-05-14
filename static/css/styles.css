@@ -1,0 +1,163 @@
+body {
+    background-color: #f5f7fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar-brand {
+    font-weight: 600;
+}
+
+.sensor-card {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    height: 100%;
+    transition: transform 0.2s;
+}
+
+.sensor-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sensor-icon {
+    font-size: 2.5rem;
+    color: #3498db;
+    margin-right: 15px;
+    width: 60px;
+    text-align: center;
+}
+
+.sensor-data {
+    flex-grow: 1;
+}
+
+.sensor-data h5 {
+    margin: 0;
+    font-size: 1rem;
+    color: #7f8c8d;
+}
+
+.value {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-right: 5px;
+}
+
+.unit {
+    font-size: 1rem;
+    color: #7f8c8d;
+}
+
+.value-normal {
+    color: #2ecc71;
+}
+
+.value-warning {
+    color: #f39c12;
+}
+
+.value-danger {
+    color: #e74c3c;
+}
+
+.pump-status {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.pump-status h6 {
+    margin-bottom: 8px;
+    color: #34495e;
+}
+
+canvas {
+    width: 100% !important;
+    height: 300px !important;
+}
+
+.card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+}
+
+.card-header {
+    border-radius: 12px 12px 0 0 !important;
+    font-weight: 600;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.pulse {
+    animation: pulse 1.5s ease;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.15);
+}
+
+@media (max-width: 768px) {
+    .sensor-card {
+        margin-bottom: 15px;
+    }
+    
+    .value {
+        font-size: 1.5rem;
+    }
+    
+    .sensor-icon {
+        font-size: 2rem;
+        width: 50px;
+    }
+}
+
+.logs-table {
+    font-size: 0.9rem;
+}
+
+.logs-table thead {
+    background-color: #f8f9fa;
+}
+
+footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+.loading-spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border-left-color: #09f;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
