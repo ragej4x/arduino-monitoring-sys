@@ -1,6 +1,6 @@
 <h1>CIRCUIT CONNECTION</h1>
 
-![alt text](http://url/to/img.png)
+![circuit](https://raw.githubusercontent.com/ragej4x/arduino-monitoring-sys/refs/heads/main/circuit.png)
 
 
 DTS ES :
